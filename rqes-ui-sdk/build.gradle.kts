@@ -32,11 +32,11 @@ plugins {
     alias(libs.plugins.owasp.dependencycheck)
 }
 
-val NAMESPACE: String by project
-val GROUP: String by project
-val SDK_VERSION: String by project
-val MIN_SDK_VERSION: String by project
-val POM_SCM_URL: String by project
+val NAMESPACE = project.property("NAMESPACE") as String
+val GROUP = project.property("GROUP") as String
+val SDK_VERSION = project.property("SDK_VERSION") as String
+val MIN_SDK_VERSION = project.property("MIN_SDK_VERSION") as String
+val POM_SCM_URL = project.property("POM_SCM_URL") as String
 
 group = GROUP
 
